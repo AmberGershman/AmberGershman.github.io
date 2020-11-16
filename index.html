@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Bootstrap Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!--Styling CSS and Fonts-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>The Index of Happiness</title>
+</head>
+
+<body>
+    <!--Navigation/Header-->
+    <div class="jumbotron">
+        <div class="navbar">
+            <a href="index.html">
+                <h1>The Unbearable Happiness of Finland</h1>
+            </a>
+            <nav class="navbar navbar-expand-lg">
+                <div class="collapse navbar-collapse dropleft" id="navbarNavDropdown">
+                    <a class="nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">Menu
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <h5 class="dropdown-header">Index Plots</h5>
+                            <a class="dropdown-item" href="Resources/support.html">Social Support</a>
+                            <a class="dropdown-item" href="Resources/generosity.html">Generosity</a>
+                            <a class="dropdown-item" href="Resources/gdp.html">GDP per Capita</a>
+                            <a class="dropdown-item" href="Resources/health.html">Health/Life Expectancy</a>
+                            <a class="dropdown-item" href="Resources/autonomy.html">Autonomy</a>
+                            <a class="dropdown-item" href="Resources/corruption.html">Corruption</a>
+                            <div class="dropdown-divider"></div>
+                            <h5 class="dropdown-header">Analysis/Data</h5>
+                            <a class="dropdown-item" href="Resources/comparisons.html">Comparisons</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="Resources/data.html">Data Source</a>
+                        </div>
+                    </a>
+
+                </div>
+            </nav>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 col-md-8">
+                <div class="card" style="width: 70rem;">
+                    <h2>Happiness, Ranked</h2>
+                    <br>
+                    <p style="float: left;"><img src="Resources/assets/images/boxplot.jpeg">
+                        Each year. the UN Sustainable Development Solutions Network compiles the <strong>World
+                            Happiness
+                            Report</strong>, an ambitious annual publication examining the level of happiness of its
+                        respondents. This data is aggregated by country and cross referenced by human development
+                        indices, including freedoms by county, perceived corruption of government officials, GDP per
+                        capita, etc.
+                        <br><br>Essentially, a nerdy group of scientists look at how happy people are based on
+                        national
+                        circumstance.
+                        <br><br>This project seeks to analyze the 2019 results from 156 countries and identify
+                        common
+                        patterns. Each graph plots a nation’s happiness score and a human development index and
+                        highlights the overall rank of each country within the scatterplot. This will allow us to
+                        see
+                        where higher and lower ranked countries fall within the dataset.
+                        <br><br><strong>Click on a graph to the side or in the menu button</strong> to view
+                        individual
+                        indices. You can
+                        also compare multiple graphs and review the source data. As will be discussed, the DARKER
+                        the
+                        dot on the scatter plot, the HIGHER the rank. Let’s get started!
+                    </p>
+
+                </div>
+            </div>
+            <!--Sidebar Visualizations-->
+            <div class="col-sm-3 col-md-4">
+                <div class="card" id="sidebar-content"">
+                    <h5>Plot Visualizations</h5>
+                    <!-- Page Content -->
+                    <div class=" row-fluid">
+                    <div class="img_wrap">
+                        <a href="Resources/support.html"><img class="img_img"
+                                src="Resources/assets/images/support.png"></a>
+                        <div class="middle">
+                            <div class="img__description">Social Support</div>
+                        </div>
+                    </div>
+                    <div class="img_wrap">
+                        <a href="Resources/generosity.html"><img class="img_img"
+                                src="Resources/assets/images/generosity.png"></a>
+                        <div class="middle">
+                            <div class="img__description">Generosity</div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row-fluid">
+                    <div class="img_wrap">
+                        <a href="Resources/gdp.html"><img class="img_img" src="Resources/assets/images/gdp.png"></a>
+                        <div class="middle">
+                            <div class="img__description">GDP per Capita</div>
+                        </div>
+                    </div>
+                    <div class="img_wrap">
+                        <a href="Resources/health.html"><img class="img_img"
+                                src="Resources/assets/images/health.png"></a>
+                        <div class="middle">
+                            <div class="img__description">Health/Life Expectancy</div>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="row-fluid">
+                    <div class="img_wrap">
+                        <a href="Resources/auto.css"><img class="img_img"
+                                src="Resources/assets/images/autonomy.png"></a>
+                        <div class="middle">
+                            <div class="img__description">Autonomy</div>
+                        </div>
+                    </div>
+                    <div class="img_wrap">
+                        <a href="Resources/corruption.html"><img class="img_img"
+                                src="Resources/assets/images/corruption.png"></a>
+                        <div class="middle">
+                            <div class="img__description">Percieved Corruption</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
